@@ -71,7 +71,7 @@ train_x_year=f.readlines()
 for i in range(len(train_x_year)):
     train_x_year[i]=train_x_year[i].strip('\n')
 
-'''
+
 mean_y=np.zeros((1256,55))
 for i in range(1256):
     name_lst=name_lst_all[i*100:i*100+100]
@@ -117,7 +117,7 @@ for i in range(11):
     #df_X["name"]=name_lst
     print("%d times,get test_X"%(i+1))
     with open(df_test_file+'/'+str(i)+'.pk', "wb") as f:
-        pickle.dump(df_X, f, protocol = 4)'''
+        pickle.dump(df_X, f, protocol = 4)
 
 
 with open('D:/ml/random_train_x.pk','rb')as f:
